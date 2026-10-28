@@ -14,14 +14,10 @@ require __DIR__.'/admin-reference-data.php';
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -32,4 +28,6 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 require __DIR__.'/admin-uploads.php';
 require __DIR__.'/admin-dashboard.php';
- require __DIR__.'/admin-alerts.php';
+require __DIR__.'/admin-alerts.php';
+require __DIR__.'/admin-reports.php';
+require __DIR__.'/admin-phase6.php';

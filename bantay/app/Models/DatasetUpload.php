@@ -8,7 +8,8 @@ class DatasetUpload extends Model
 {
     protected $fillable = [
         'reporting_period_id', 'uploaded_by', 'original_filename', 'file_hash',
-        'status', 'total_rows', 'accepted_rows', 'quarantined_rows', 'failure_reason',
+        'status', 'total_rows', 'accepted_rows', 'quarantined_rows', 'skipped_rows',
+        'notes', 'failure_reason',
     ];
 
     public function reportingPeriod()

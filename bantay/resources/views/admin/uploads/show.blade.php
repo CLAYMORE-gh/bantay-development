@@ -5,7 +5,7 @@
     @endif
 
     <div class="bg-white shadow-sm border rounded-lg p-6 mb-6">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-sm">
             <div>
                 <div class="text-gray-500">Status</div>
                 <div class="font-medium">{{ str_replace('_', ' ', ucfirst($upload->status)) }}</div>
@@ -22,6 +22,12 @@
                 <div class="text-gray-500">Accepted / Quarantined</div>
                 <div class="font-medium">{{ $upload->accepted_rows }} / {{ $upload->quarantined_rows }}</div>
             </div>
+            @if ($upload->skipped_rows)
+                <div>
+                    <div class="text-gray-500">Skipped (not disease cases)</div>
+                    <div class="font-medium">{{ $upload->skipped_rows }}</div>
+                </div>
+            @endif
         </div>
 
         <div class="mt-4 pt-4 border-t grid grid-cols-3 gap-4 text-sm">
@@ -32,6 +38,10 @@
 
         @if ($upload->failure_reason)
             <div class="mt-4 p-3 bg-red-50 border border-red-200 text-red-800 rounded-lg text-sm">{{ $upload->failure_reason }}</div>
+        @endif
+
+        @if ($upload->notes)
+            <div class="mt-4 p-3 bg-blue-50 border border-blue-100 text-blue-800 rounded-lg text-sm">{{ $upload->notes }}</div>
         @endif
     </div>
 

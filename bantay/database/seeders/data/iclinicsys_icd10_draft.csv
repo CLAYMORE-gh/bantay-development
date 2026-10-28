@@ -1,0 +1,113 @@
+code,description,disease,grouping_basis,seen_in_sample
+A09,"Infectious gastroenteritis and colitis, unspecified (ACUTE BLOODY DIARRHEA, ACUTE GASTROENTERITIS, ACUTE WATERY DIARRHEA, ENTERITIS, Dysentery) (INFECTIOUS DIARRHEA/DIARRHEA W/DEHYD, LEVEL OF DEHYDRATION NOT SPEC, W/MILD,SOME,MODERATE,MARKED,SEVERE)",Acute Diarrhea,wireframe name for A09,6
+A15,Respiratory tuberculosis,Respiratory tuberculosis,own code,1
+A64,"Unspecified sexually transmitted disease (STD, STI)",Unspecified sexually transmitted disease,own code,1
+B00.0,Eczema herpeticum,Eczema herpeticum,own code,2
+B01.9,Varicella without complication (CHICKEN POX),Varicella without complication,own code,1
+B09,Unspecified viral infection characterized by skin and mucous membrane lesions (VIRAL EXANTHEM),Unspecified viral infection characterized by skin and mucous membrane lesions,own code,1
+B34.9,"Viral infection, unspecified (ACUTE VIRAL INFECTION, SYSTEMATIC VIRAL INFECTION, VIRAL DISEASE)","Viral infection, unspecified",own code,8
+B35.3,Tinea pedis,Tinea pedis,own code,1
+B35.4,Tinea corporis,Tinea corporis,own code,1
+B37.0,"Candidal stomatitis (ORAL CANDIDIASIS, ORAL MONILIASIS, MOUTH/ORAL THRUSH)",Candidal stomatitis,own code,1
+B82.9,"Intestinal parasitism, unspecified","Intestinal parasitism, unspecified",own code,1
+B85.0,Pediculosis due to Pediculus humanus capitis,Pediculosis due to Pediculus humanus capitis,own code,1
+B86,Scabies,Scabies,own code,1
+B89,Unspecified parasitic disease (PARASITISM),Unspecified parasitic disease,own code,1
+E10.6,Type I diabetes mellitus with other specified complications,Diabetes Mellitus,curated group,1
+E10.9,"Type I diabetes mellitus with unspecified complications (INSULIN DEPENDENT DIABETES MELLITUS, IDDM)",Diabetes Mellitus,curated group,1
+E11,"Type II diabetes mellitus, non-insulin-requiring",Diabetes Mellitus,curated group,7
+E11.6,Type II diabetes mellitus with other specified complications,Diabetes Mellitus,curated group,1
+E11.9,"Type II diabetes mellitus with unspecified complications (NON-INSULIN DEPENDENT DIABETES MELLITUS, NIDDM)",Diabetes Mellitus,curated group,2
+E34.9,"Endocrine disorder, unspecified (HORMONAL IMBALANCE)","Endocrine disorder, unspecified",own code,3
+E78.9,"Disorder of lipoprotein metabolism, unspecified (DISLIPIDEMIA)","Disorder of lipoprotein metabolism, unspecified",own code,12
+E79.0,Hyperuricaemia without signs of inflammatory arthritis and tophaceous disease (HYPERURICEMIA),Hyperuricaemia without signs of inflammatory arthritis and tophaceous disease,own code,1
+F31,Bipolar affective disorder,Bipolar affective disorder,own code,1
+F84.0,Autistic disorder,Autistic disorder,own code,1
+G40.9,"Epilepsy, unspecified (EPILEPTIC CONVULSION/SEIZURE/FITS) (CEREBRAL DYSRHYTHMIA)","Epilepsy, unspecified",own code,1
+G43,Migraine,Migraine,own code,2
+G43.9,"Migraine, unspecified",Migraine,ICD parent code in sample,1
+G44.2,Tension-type headache,Tension-type headache,own code,1
+G62.9,"Polyneuropathy, unspecified (PERIPHERAL NEUROPATHY) (POLYNEURITIS)","Polyneuropathy, unspecified",own code,2
+H00.0,Hordeolum (externum) (internum) of eyelid (STYE),Hordeolum,own code,4
+H10,Conjunctivitis,Conjunctivitis,own code,1
+H25.90,"CATARACT, LEFT (PATIENT'S AGE =>50) (IMMATURE, MATURE, SENILE)","Cataract, Left",own code,1
+H60,Otitis externa,Otitis externa,own code,2
+H81.1,Benign paroxysmal vertigo,Benign paroxysmal vertigo,own code,4
+H81.3,Other peripheral vertigo,Other peripheral vertigo,own code,1
+I10,Essential (primary) hypertension,Hypertension,curated group,4
+I10.0,"HYPERTENSION, STAGE I",Hypertension,curated group,22
+I10.1,"HYPERTENSION, STAGE II",Hypertension,curated group,21
+I10.9,"HYPERTENSION, HPN (ESSENTIAL HYPERTENSION) (MALIGNANT HYPERTENSION)",Hypertension,curated group,4
+I11.9,Hypertensive heart disease without (congestive) heart failure (HCVD) (CARDIOMELAGY WITH HYPERTENSION) (CARDIOMELAGY WITH HYPERTENSION WITHOUT HEART FAILURE) (HYPERTENSIVE ATHEROSCLEROTIC CARDIOVASCULAR DISEASE),Hypertensive heart disease without,own code,3
+I20,Angina pectoris,Angina pectoris,own code,1
+I20.9,"Angina pectoris, unspecified",Angina pectoris,ICD parent code in sample,1
+I25.1,"Atherosclerotic heart disease (Coronary Artery Disease) (Atherosclerotic heart disease, ASHD) (ARTERIOSCLEROTIC HEART DISEASE, ASHD) (CORONARY ARTERY DISEASE, CAD) (CARDIAC SCLEROSIS)",Atherosclerotic heart disease,own code,1
+I63.9,"Cerebral infarction, unspecified (CVA INFARCT) (CVA WITH INFARCTION) (CEREBROVASCULAR DISEASE) (THROMBOTIC INFARCT) (DIABETIC MACROVASCULAR DISEASE)","Cerebral infarction, unspecified",own code,1
+I64,"Stroke, not specified as hemorrhage or infarction (Cerebral Convulsion) (CVA WITH PARALYSIS) (CARDIOEMBOLIC CVA, ACCIDENT) (CEREBROVASCULAR CVA) (CVA WITH RIGHT HEMIPLEGIA)","Stroke, not specified as hemorrhage or infarction",own code,1
+I67,Other cerebrovascular diseases,Other cerebrovascular diseases,own code,1
+I67.9,"Cerebrovascular disease, unspecified",Other cerebrovascular diseases,ICD parent code in sample,1
+I69.3,Sequelae of cerebral infarction,Sequelae of cerebral infarction,own code,1
+J00,ACUTE RHINITIS (COMMON COLD) (CORYZA) (ACUTE NASOPHARYNGITIS),Acute Respiratory Infection,wireframe: ARI = J00-J22,4
+J03,Acute tonsillitis,Acute Respiratory Infection,wireframe: ARI = J00-J22,6
+J04.0,Acute laryngitis,Acute Respiratory Infection,wireframe: ARI = J00-J22,1
+J06,Acute upper respiratory infections of multiple and unspecified sites,Acute Respiratory Infection,wireframe: ARI = J00-J22,36
+J06.8,"Other acute upper respiratory infections of multiple sites (Acute Tonsillo Pharyngitis (ATP), RTI)",Acute Respiratory Infection,wireframe: ARI = J00-J22,2
+J06.9,"Acute upper respiratory infection, unspecified (Acute Upper Respiratory Tract Infection, VIRAL)",Acute Respiratory Infection,wireframe: ARI = J00-J22,43
+J18.9,"Pneumonia, unspecified (PARAPNEUMONIC/PNEUMONIA PLEURAL EFFUSION) (COMMUNITY ACQUIRED PNEUMONIA, CAP, PNEUMONITIS) (NOSOCOMIAL PNEUMONIA)",Acute Respiratory Infection,wireframe: ARI = J00-J22,8
+J32.9,"Chronic sinusitis, unspecified (SINUSITIS)","Chronic sinusitis, unspecified",own code,1
+J33,Nasal polyp,Nasal polyp,own code,1
+J45,Asthma,Asthma,curated group,1
+J45.90,BRONCHIAL ASTHMA IN EXACERBATION (BAIAE),Asthma,curated group,1
+J45.99,ASTHMA (ASTHMATIC BRONCHITIS) (BRONCHIAL ASTHMA) (ACUTE BRONCHITIS WITH ASTHMATIC COMPONENT) (ACUTE BRONCHITIS WITH HYPERACTIVE AIRWAYS),Asthma,curated group,2
+K08.8,Other specified disorders of teeth and supporting structures (TOOTHACHE/TOOTH PAIN),Other specified disorders of teeth and supporting structures,own code,1
+K21.9,"Gastro-esophageal reflux disease without oesophagitis (ESOPHAGEAL REFLUX DISEASE/GASTROESOPHAGEAL REFLUX DISEASE, GERD/LARYNGOPHARYNGEAL REFLUX DISEASE, LPRD [WITHOUT ESOPHAGITIS]) (LARYNGOPHARYNGEAL REFLUX DISEASE, LPRD)",Gastro-esophageal reflux disease without oesophagitis,own code,1
+K29.7,"Gastritis, unspecified","Gastritis, unspecified",own code,2
+K30.9,DYSPEPSIA (UNINVESTIGATED DYSPEPSIA),Dyspepsia,own code,1
+K31.9,"Disease of stomach and duodenum, unspecified (Acid Peptic Disease) (STOMACH ACHE) (DIABETIC GASTROPATHY) (DIABETIC HYPERMOTILITY) (GASTROPHATHY) (NSAID GASTROPATHY)","Disease of stomach and duodenum, unspecified",own code,9
+K52.9,"Noninfective gastroenteritis and colitis, unspecified (NON-INFECTIOUS DIARRHEA)","Noninfective gastroenteritis and colitis, unspecified",own code,1
+K56.4,Other impaction of intestine (COLON/FECAL IMPACTION),Other impaction of intestine,own code,1
+K59.0,Constipation,Constipation,own code,3
+K80,Cholelithiasis,Cholelithiasis,own code,1
+L01,Impetigo,Impetigo,own code,6
+L02.3,"Cutaneous abscess, furuncle and carbuncle of buttock","Cutaneous abscess, furuncle and carbuncle of buttock",own code,1
+L02.8,"Cutaneous abscess, furuncle and carbuncle of other sites","Cutaneous abscess, furuncle and carbuncle of other sites",own code,1
+L02.9,"Cutaneous abscess, furuncle and carbuncle, unspecified (BOIL, CARBUNCLE, ABSCESS)","Cutaneous abscess, furuncle and carbuncle, unspecified",own code,3
+L03,Cellulitis,Cellulitis,own code,7
+L03.0,Cellulitis of finger and toe (INFECTED TOE NAIL) (PARONYCHIA),Cellulitis,ICD parent code in sample,1
+L03.3,Cellulitis of trunk,Cellulitis,ICD parent code in sample,1
+L03.8,Cellulitis of other sites,Cellulitis,ICD parent code in sample,1
+L21,Seborrheic dermatitis,Seborrheic dermatitis,own code,1
+L23,Allergic contact dermatitis,Allergic contact dermatitis,own code,4
+L23.9,"Allergic contact dermatitis, unspecified cause (ALLERGIC DERMATITIS)",Allergic contact dermatitis,ICD parent code in sample,1
+L30.9,"Dermatitis, unspecified (ECZEMA) (ECZEMATOID DERMATITIS)","Dermatitis, unspecified",own code,1
+M10.09,GOUTY ARTHRITIS,Gouty Arthritis,own code,1
+M19.99,OSTEOARTHRITIS,Osteoarthritis,own code,3
+M41,Scoliosis,Scoliosis,own code,1
+M47.9,"Spondylosis, unspecified","Spondylosis, unspecified",own code,1
+M54.5,Low back pain (LUMBAGO) (LUMBAR PAIN),Low back pain,own code,1
+M54.59,LUMBAGO,Low back pain,ICD parent code in sample,2
+M62.6,Muscle strain,Muscle strain,own code,5
+M75.0,Adhesive capsulitis of shoulder,Adhesive capsulitis of shoulder,own code,1
+M79.1,Myalgia (MUSCLE PAIN),Myalgia,own code,6
+N20.9,"Urinary calculus, unspecified (Urolithiasis) (PYELONEPHRITIS WITH CALCULUS)","Urinary calculus, unspecified",own code,1
+N30.0,Acute cystitis,Urinary Tract Infection,curated group,3
+N39.0,"Urinary tract infection, site not specified (GENITO URINARY TRACT INFECTION (GUTI) (Urosepsis)",Urinary Tract Infection,curated group,27
+N40,Hyperplasia of prostate (Benign Prostatic Hypertrophy) (Benign Prostatic HYPERPLASIA),Hyperplasia of prostate,own code,1
+N93.9,"Abnormal uterine and vaginal bleeding, unspecified (UTERINE BLEEDING/HEMORRHAGE, NOT DUE TO MENSTRUATION) (DYSFUNCTIONAL UTERINE BLEEDING, DUB)","Abnormal uterine and vaginal bleeding, unspecified",own code,1
+R04.2,Hemoptysis,Hemoptysis,own code,1
+R22.1,"Localized swelling, mass and lump, neck","Localized swelling, mass and lump, neck",own code,1
+R25.8,Other and unspecified abnormal involuntary movements (MUSCLE SPASM),Other and unspecified abnormal involuntary movements,own code,2
+R51,Headache (CEPHALGIA) (FACIAL/HEAD PAIN),Headache,own code,1
+S01.0,Open wound of scalp,Open wound of scalp,own code,1
+S01.9,"Open wound of head, part unspecified","Open wound of head, part unspecified",own code,1
+S05.0,Injury of conjunctiva and corneal abrasion without mention of foreign body,Injury of conjunctiva and corneal abrasion without mention of foreign body,own code,1
+S61.9,"Open wound of wrist and hand part, part unspecified","Open wound of wrist and hand part, part unspecified",own code,1
+S81.7,Multiple open wounds of lower leg,Multiple open wounds of lower leg,own code,1
+S81.8,Open wound of other parts of lower leg,Open wound of other parts of lower leg,own code,1
+S91.0,Open wound of ankle,Open wound of ankle,own code,1
+T14.0,"Supreficial injury of unspecified body region (ABRASION, BRUISES, CONTUSION, HEMATOMA, INSECT BITE)",Superficial injury of unspecified body region,own code; typo in source label corrected in disease name,17
+T14.1,"Open wound of unspecified body region (Animal Bite (Dog and Others), GUNSHOT WOUND, LACERATED WOUND, MINOR INJURIES, STAB WOUND)",Open wound of unspecified body region,own code,13
+T15,Foreign body on external eye,Foreign body on external eye,own code,1
+T78.4,"Allergy, unspecified (HYPERSENSITIVITY REACTION)","Allergy, unspecified",own code,1
+T79.3,"Post-traumatic wound infection, not elsewhere classified (INFECTED WOUND)","Post-traumatic wound infection, not elsewhere classified",own code,8
+W54.99,DOGBITE,Dogbite,own code,1

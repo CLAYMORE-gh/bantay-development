@@ -110,8 +110,8 @@ class DatasetUploadController extends Controller
             'sex' => 'nullable|string',
         ]);
 
-        DB::transaction(function () use ($correctedRow, $record, $validator) {
-            $result = $validator->validateRow($correctedRow);
+        DB::transaction(function () use ($correctedRow, $record, $validator, $upload) {
+             $result = $validator->validateRow($correctedRow, $upload->reportingPeriod);
 
             // Clear old findings for this record, replace with fresh results.
             $record->findings()->delete();
@@ -126,7 +126,7 @@ class DatasetUploadController extends Controller
             }
 
             $record->update([
-                'raw_data' => $correctedRow,
+                'raw_data' => array_merge($record->raw_data ?? [], $correctedRow),
                 'disease_id' => $result['standardized']['disease_id'],
                 'icd10_code_id' => $result['standardized']['icd10_code_id'],
                 'barangay_id' => $result['standardized']['barangay_id'],

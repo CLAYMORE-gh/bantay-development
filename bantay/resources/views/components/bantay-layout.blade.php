@@ -115,10 +115,10 @@
                     </div>
                 </div>
             </header>
-
-            <main class="flex-1 p-8">
-                {{ $slot }}
-            </main>
+  <main class="flex-1 p-8">
+      {{ $slot }}
+      <x-disclaimer-footer />
+  </main>
         </div>
     </div>
 </body>

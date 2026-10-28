@@ -1,7 +1,4 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">Edit Reporting Period</h2>
-    </x-slot>
+<x-bantay-layout title="Add Reporting Period" subtitle="Reference Data">
 
     <div class="py-8">
         <div class="max-w-xl mx-auto sm:px-6 lg:px-8">
@@ -57,4 +54,4 @@
             </div>
         </div>
     </div>
-</x-app-layout>
+</x-bantay-layout>

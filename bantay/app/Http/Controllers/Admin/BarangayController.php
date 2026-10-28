@@ -24,6 +24,8 @@ class BarangayController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255|unique:barangays,name',
             'code' => 'nullable|string|max:50|unique:barangays,code',
+            'latitude' => 'nullable|numeric|between:-90,90',
+            'longitude' => 'nullable|numeric|between:-180,180',
             'is_active' => 'boolean',
         ]);
 
@@ -45,6 +47,8 @@ class BarangayController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255|unique:barangays,name,' . $barangay->id,
             'code' => 'nullable|string|max:50|unique:barangays,code,' . $barangay->id,
+            'latitude' => 'nullable|numeric|between:-90,90',
+            'longitude' => 'nullable|numeric|between:-180,180',
             'is_active' => 'boolean',
         ]);
 

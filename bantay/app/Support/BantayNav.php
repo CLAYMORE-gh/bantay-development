@@ -6,10 +6,8 @@ class BantayNav
 {
     /**
      * Sidebar nav items per role, matching the BANTAY wireframes.
-     * 'route' is null for items whose backend/page doesn't exist yet —
-     * those render as disabled/"soon" items instead of dead links.
-     *
-     * Updated for Phase 4: Rules Engine and Alerts now have real routes.
+     * Phase 6: every Administrator item now has a real route. Other roles'
+     * Notifications/Reports items are updated where applicable.
      */
     public static function forRole(string $role): array
     {
@@ -20,14 +18,14 @@ class BantayNav
                 ['label' => 'Surveillance', 'icon' => 'map', 'route' => 'admin.dashboard.map'],
                 ['label' => 'Rules Engine', 'icon' => 'flow', 'route' => 'admin.rules.index'],
                 ['label' => 'Alerts', 'icon' => 'alert', 'route' => 'admin.alerts.index'],
-                ['label' => 'Notifications', 'icon' => 'bell', 'route' => null],
-                ['label' => 'Reports', 'icon' => 'doc', 'route' => null],
+                ['label' => 'Notifications', 'icon' => 'bell', 'route' => 'admin.notifications.index'],
+                ['label' => 'Reports', 'icon' => 'doc', 'route' => 'admin.reports.index'],
                 ['label' => 'Reference Data', 'icon' => 'list', 'route' => 'admin.barangays.index'],
-                ['label' => 'Users & Roles', 'icon' => 'users', 'route' => null],
-                ['label' => 'System Status', 'icon' => 'pulse', 'route' => null],
-                ['label' => 'Audit Trail', 'icon' => 'doc', 'route' => null],
-                ['label' => 'System Settings', 'icon' => 'cog', 'route' => null],
-                ['label' => 'Backup & Recovery', 'icon' => 'archive', 'route' => null],
+                ['label' => 'Users & Roles', 'icon' => 'users', 'route' => 'admin.users.index'],
+                ['label' => 'System Status', 'icon' => 'pulse', 'route' => 'admin.system-status.index'],
+                ['label' => 'Audit Trail', 'icon' => 'doc', 'route' => 'admin.audit-trail.index'],
+                ['label' => 'System Settings', 'icon' => 'cog', 'route' => 'admin.settings.index'],
+                ['label' => 'Backup & Recovery', 'icon' => 'archive', 'route' => 'admin.backup.index'],
             ],
             'Health Officer' => [
                 ['label' => 'Dashboard', 'icon' => 'grid', 'route' => 'admin.dashboard'],
@@ -36,8 +34,8 @@ class BantayNav
                 ['label' => 'Surveillance', 'icon' => 'map', 'route' => 'admin.dashboard.map'],
                 ['label' => 'Rule Review', 'icon' => 'shield', 'route' => 'admin.rules.index'],
                 ['label' => 'Alerts', 'icon' => 'alert', 'route' => 'admin.alerts.index'],
-                ['label' => 'Notifications', 'icon' => 'bell', 'route' => null],
-                ['label' => 'Reports', 'icon' => 'doc', 'route' => null],
+                ['label' => 'Notifications', 'icon' => 'bell', 'route' => 'admin.notifications.index'],
+                ['label' => 'Reports', 'icon' => 'doc', 'route' => 'admin.reports.index'],
             ],
             'Surveillance Officer' => [
                 ['label' => 'Dashboard', 'icon' => 'grid', 'route' => 'admin.dashboard'],
@@ -47,8 +45,8 @@ class BantayNav
                 ['label' => 'Processing Status', 'icon' => 'pulse', 'route' => 'admin.uploads.index'],
                 ['label' => 'Surveillance', 'icon' => 'map', 'route' => 'admin.dashboard.map'],
                 ['label' => 'Alerts', 'icon' => 'alert', 'route' => 'admin.alerts.index'],
-                ['label' => 'Notifications', 'icon' => 'bell', 'route' => null],
-                ['label' => 'Reports', 'icon' => 'doc', 'route' => null],
+                ['label' => 'Notifications', 'icon' => 'bell', 'route' => 'admin.notifications.index'],
+                ['label' => 'Reports', 'icon' => 'doc', 'route' => 'admin.reports.index'],
             ],
             'Viewer' => [
                 ['label' => 'Dashboard', 'icon' => 'grid', 'route' => 'admin.dashboard'],
@@ -63,13 +61,14 @@ class BantayNav
         };
     }
 
-    /**
-     * Live badge counts (replaces the earlier hardcoded wireframe numbers).
-     * Call this from the layout to get real open-alert counts per role.
-     */
     public static function alertBadgeCount(): int
     {
         return \App\Models\Alert::openStatus()->count();
+    }
+
+    public static function unreadNotificationCount(): int
+    {
+        return auth()->user()?->unreadNotifications()->count() ?? 0;
     }
 
     public static function blurbForRole(string $role): array

@@ -9,10 +9,12 @@ class Barangay extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'code', 'is_active'];
+    protected $fillable = ['name', 'code', 'latitude', 'longitude', 'is_active'];
 
     protected $casts = [
         'is_active' => 'boolean',
+        'latitude' => 'float',
+        'longitude' => 'float',
     ];
 
     public function scopeActive($query)
